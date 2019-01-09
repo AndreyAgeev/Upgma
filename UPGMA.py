@@ -175,7 +175,7 @@ def upgma(matrix):
         
         new_cluster = change_cluster(new_cluster, max_ind, i, j)
         
-        cluster[i] = cluster[i] + cluster[j]#возможно индексы  надо поменять
+        cluster[i] = cluster[i] + cluster[j]
         tree_ind.append((i,j))
         _dict[height] = (i, j)  
     i, j, height = findSimilarSequences(matrix)
